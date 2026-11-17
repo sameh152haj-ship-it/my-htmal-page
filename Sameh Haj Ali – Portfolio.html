@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sameh Haj Ali – Renewable Energy Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f3;--surface:#fff;--ink:#14261d;--mute:#4d6156;--green:#1f6b45;--deep:#0d3b2a;--gold:#b8901f;--line:#d5e0d6;--sun:#e4b93c;
+--fd:'Fraunces',Georgia,serif;--fb:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1812;--surface:#13261d;--ink:#e8f1ea;--mute:#a3b8aa;--green:#5fbf88;--deep:#07140e;--gold:#e0b84a;--line:#25402f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1812;--surface:#13261d;--ink:#e8f1ea;--mute:#a3b8aa;--green:#5fbf88;--deep:#07140e;--gold:#e0b84a;--line:#25402f;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--fb);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:var(--fd);font-weight:700;line-height:1.15;margin:0 0 .6em;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,6vw,2.4rem)}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:var(--fd);font-weight:700;text-decoration:none;font-size:1.15rem}
+.logo i{font-style:normal;color:var(--gold)}
+.menu{min-width:48px;min-height:48px;border:0;background:none;color:var(--ink);font:700 .95rem var(--fb);cursor:pointer}
+.links{display:none;flex-direction:column;padding:8px 0 16px}
+.links.open{display:flex}
+.links a{padding:14px 4px;min-height:48px;text-decoration:none;font-weight:500;border-top:1px solid var(--line)}
+@media(min-width:860px){.menu{display:none}.links,.links.open{display:flex;flex-direction:row;gap:26px;padding:0}.links a{border:0;padding:0;min-height:0}}
+.hero{padding:48px 0 56px;background:radial-gradient(520px 320px at 85% 0,color-mix(in srgb,var(--sun) 28%,transparent),transparent 70%)}
+.hero h1{font-size:clamp(2.5rem,11vw,4.6rem);margin-bottom:.3em}
+.lead{font-size:1.2rem;color:var(--mute)}
+.brand{margin:32px 0 0;padding:20px 0 20px 20px;border-left:4px solid var(--gold);position:relative}
+.brand::after{content:"";position:absolute;left:-4px;bottom:0;width:4px;height:40%;background:var(--green)}
+.brand q{display:block;font:700 clamp(1.4rem,5.6vw,2.2rem)/1.25 var(--fd);quotes:none}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--green)}
+.btn.p{background:var(--green);color:#fff}
+@media(max-width:520px){.btn{flex:1 1 100%}}
+.vals{display:grid;gap:14px;margin-top:28px}
+.val{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.val h3{font-size:1.2rem;margin-bottom:.3em;color:var(--green)}
+.val p{margin:0;color:var(--mute)}
+@media(min-width:760px){.vals{grid-template-columns:repeat(3,1fr)}}
+.story{display:grid;gap:0;margin-top:28px;position:relative}
+.dim{position:relative;padding:0 0 28px 44px}
+.dim::before{content:"";position:absolute;left:13px;top:28px;bottom:0;width:2px;background:var(--green)}
+.dim:last-child::before{display:none}
+.dim::after{content:"";position:absolute;left:4px;top:6px;width:20px;height:20px;border-radius:50%;background:var(--gold);border:4px solid var(--bg)}
+.dim h3{font-size:1.3rem;margin-bottom:.25em}
+.dim p{color:var(--mute);margin:0}
+.dim ul{margin:.5em 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.dim li{font-size:.85rem;font-weight:500;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+@media(min-width:860px){.story{grid-template-columns:repeat(4,1fr);gap:20px}.dim{padding:44px 0 0}.dim::before{left:20px;right:-20px;top:13px;bottom:auto;width:auto;height:2px}.dim::after{left:4px;top:4px}}
+.gd{background:var(--deep);color:#eaf4ec;position:relative;overflow:hidden}
+.gd h2{color:#fff;max-width:20ch;font-size:clamp(1.9rem,7vw,3rem)}
+.gd .sun{position:absolute;right:-90px;top:-90px;width:340px;height:340px;opacity:.9;pointer-events:none}
+.gd .circ{position:absolute;left:0;bottom:0;width:100%;height:120px;opacity:.35;pointer-events:none}
+.gd .wrap{position:relative}
+.gd .tag{display:inline-block;color:var(--sun);font-weight:700;margin-bottom:14px}
+.themes{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.themes li{display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid rgba(228,185,60,.35);border-radius:12px;background:rgba(255,255,255,.05)}
+.themes svg{flex:none;width:28px;height:28px;color:var(--sun)}
+@media(min-width:760px){.themes{grid-template-columns:1fr 1fr}.themes li:last-child{grid-column:1/-1}}
+.tl{position:relative;margin:30px 0 0;padding:0;list-style:none}
+.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--green),var(--line));border-radius:2px}
+.it{position:relative;padding:0 0 18px 40px;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.it.in{opacity:1;transform:none}
+.it::before{content:"";position:absolute;left:3px;top:20px;width:17px;height:17px;border-radius:50%;background:var(--gold);border:3px solid var(--bg)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card>button{all:unset;box-sizing:border-box;display:block;width:100%;padding:16px 18px;cursor:pointer;min-height:56px}
+.card>button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.when{font-size:.85rem;color:var(--gold);font-weight:700}
+.card h3{font-size:1.15rem;margin:.15em 0 .1em}
+.org{font-weight:500}
+.loc{font-size:.9rem;color:var(--mute)}
+.sum{font-size:.95rem;color:var(--mute);margin:.5em 0 0}
+.chev{float:right;font-size:1.4rem;color:var(--green);transition:transform .3s}
+[aria-expanded=true] .chev{transform:rotate(45deg)}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.more.open{grid-template-rows:1fr}
+.more>div{overflow:hidden}
+.more .in{padding:0 18px 18px}
+.mets{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px}
+.met{flex:1 1 120px;border-left:3px solid var(--gold);padding:2px 0 2px 10px}
+.met b{display:block;font:700 1.6rem/1.1 var(--fd);color:var(--green)}
+.met span{font-size:.82rem;color:var(--mute)}
+.more ul{margin:0;padding-left:1.1em;color:var(--mute);font-size:.97rem}
+.more li{margin-bottom:.3em}
+@media(min-width:860px){.tl::before{left:50%;margin-left:-1px}.it{width:50%;padding:0 36px 24px 0}.it:nth-child(even){margin-left:50%;padding:0 0 24px 36px}.it::before{left:auto;right:-9px}.it:nth-child(even)::before{right:auto;left:-9px}}
+.two{display:grid;gap:28px}
+@media(min-width:760px){.two{grid-template-columns:1fr 1fr}}
+.cert{list-style:none;padding:0;margin:0}
+.cert li{padding:10px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.cert small{display:block;color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0 0 20px}
+.chips li{padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-weight:500;font-size:.92rem}
+.deg{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:18px;margin-top:20px}
+footer{background:var(--deep);color:#eaf4ec;padding:56px 0 64px}
+footer a{color:var(--sun);font-weight:700;font-size:1.15rem;display:inline-block;padding:8px 0;word-break:break-all}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.it{opacity:1;transform:none;transition:none}.more,.chev{transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="bar"><a class="logo" href="#top">Sameh <i>Haj Ali</i></a><button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<div class="links" id="links" style="display:none"></div></div>
+<div class="links" id="nl"><a href="#story">My story</a><a href="#greenday">Green Day</a><a href="#experience">Experience</a><a href="#learning">Education</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<h1>Sameh Haj Ali</h1>
+<p class="lead">Renewable energy engineer, STEM educator and community facilitator, working in Jordan.</p>
+<div class="brand"><q>Engineering Ideas. Empowering People. Building a Sustainable Future.</q></div>
+<div class="btns"><a class="btn p" href="#greenday">See Green Day</a><a class="btn" href="#contact">Get in touch</a></div>
+</div></header>
+
+<section id="about" style="padding-top:24px"><div class="wrap">
+<h2>What I stand for</h2>
+<p>I design photovoltaic systems across the full project lifecycle, and I teach, coach and counsel young people and refugees. Each strengthens the other: teaching makes me a clearer engineer, and engineering gives my teaching real substance.</p>
+<div class="vals">
+<div class="val"><h3>Engineering Ideas</h3><p>Technical thinking, creativity and innovation, from PV design to performance optimisation.</p></div>
+<div class="val"><h3>Empowering People</h3><p>Education, leadership and knowledge sharing with youth and refugee communities.</p></div>
+<div class="val"><h3>Building a Sustainable Future</h3><p>Renewable energy, environmental awareness and sustainable development.</p></div>
+</div></div></section>
+
+<section id="story" style="background:var(--surface)"><div class="wrap">
+<h2>One path, four dimensions</h2>
+<p>Engineering gives me the craft. Technology sharpens it. Education turns it into skills others can use. Community impact is where it all matters.</p>
+<div class="story">
+<div class="dim"><h3>Engineering</h3><p>BSc in Renewable Energy Engineering, ranked second in my specialization. Hands-on work across the PV project lifecycle.</p><ul><li>AutoCAD</li><li>PVSyst</li><li>SketchUp</li><li>Feasibility studies</li></ul></div>
+<div class="dim"><h3>Technology</h3><p>Digital skills, data analysis and technical solutions that make energy work measurable.</p><ul><li>MATLAB</li><li>Advanced Excel</li><li>Data analysis</li><li>VR and game development</li></ul></div>
+<div class="dim"><h3>Education</h3><p>STEM education, robotics coaching, ICT facilitation and training for young people.</p><ul><li>Robotics</li><li>Mathematics</li><li>ICT</li><li>Facilitation</li></ul></div>
+<div class="dim"><h3>Community Impact</h3><p>Youth empowerment, refugee guidance and leadership in Za’atari Camp and beyond.</p><ul><li>Youth leadership</li><li>Refugee counseling</li><li>Advocacy</li></ul></div>
+</div></div></section>
+
+<section class="gd" id="greenday">
+<svg class="sun" viewBox="0 0 340 340" aria-hidden="true"><g stroke="#e4b93c" stroke-width="3" stroke-linecap="round" opacity=".7"><path id="r" d="M170 10v40"/><use href="#r" transform="rotate(30 170 170)"/><use href="#r" transform="rotate(60 170 170)"/><use href="#r" transform="rotate(90 170 170)"/><use href="#r" transform="rotate(120 170 170)"/><use href="#r" transform="rotate(150 170 170)"/><use href="#r" transform="rotate(180 170 170)"/><use href="#r" transform="rotate(210 170 170)"/><use href="#r" transform="rotate(240 170 170)"/><use href="#r" transform="rotate(270 170 170)"/><use href="#r" transform="rotate(300 170 170)"/><use href="#r" transform="rotate(330 170 170)"/></g><circle cx="170" cy="170" r="84" fill="#e4b93c" opacity=".9"/></svg>
+<svg class="circ" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#5fbf88" stroke-width="2"><path d="M0 90h120v-30h80v30h140v-50h60v50h200"/><path d="M0 110h220v-20h60v20h320"/></g><g fill="#e4b93c"><circle cx="120" cy="60" r="5"/><circle cx="340" cy="40" r="5"/><circle cx="280" cy="90" r="5"/></g></svg>
+<div class="wrap">
+<span class="tag">Featured initiative, DOT Jordan, Za’atari Camp</span>
+<h2>Green Day – Empowering Communities Through Sustainable Energy</h2>
+<p>I launched Green Day to bring renewable energy out of the textbook and into young people’s homes and futures. It is where my engineering, teaching and community work meet.</p>
+<ul class="themes">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>Raising awareness about renewable energy and solar power.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>Promoting energy efficiency and responsible energy consumption.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h5l2-5 4 10 2-5h5"/></svg><span>Introducing young people to basic electrical concepts.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8v10H3z"/><path d="M9 21v-6h6v6"/></svg><span>Developing practical knowledge for independent home maintenance.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg><span>Introducing career opportunities as Energy Engineers and Energy Technicians.</span></li>
+</ul></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<p>Newest first. Tap any role to see what I did.</p>
+<ol class="tl" id="tl"></ol>
+</div></section>
+
+<section id="learning" style="background:var(--surface)"><div class="wrap two">
+<div><h2>Education</h2>
+<div class="deg"><h3 style="font-size:1.15rem;margin-bottom:.2em">Bachelor’s in Renewable Energy Engineering</h3><p style="margin:0;color:var(--mute)">Al al-Bayt University, Faculty of Engineering, Al-Mafraq, Jordan. Completed 02/2022. GPA 88.31%. Ranked second in the specialization.</p></div>
+<h2 style="margin-top:36px">Skills</h2>
+<ul class="chips"><li>AutoCAD</li><li>PVSyst</li><li>PVsol</li><li>SketchUp</li><li>MATLAB</li><li>STAAD.Pro</li><li>Microsoft Office</li></ul>
+<ul class="chips"><li>Critical thinking</li><li>Facilitation</li><li>Leadership</li><li>Problem solving</li><li>Teamwork</li></ul>
+<ul class="chips"><li>Arabic, native</li><li>English, B2</li><li>German, B1</li></ul></div>
+<div><h2>Certifications</h2><ul class="cert" id="certs"></ul></div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+<h2 style="color:#fff">Let’s build something sustainable</h2>
+<p>Open to renewable energy, STEM education and community development work.</p>
+<a href="mailto:Sameh.hajali@outlook.com">Sameh.hajali@outlook.com</a><br>
+<a href="tel:+962796514963">+962 79 651 4963</a>
+<p style="margin-top:24px;opacity:.7">Jordan</p>
+</div></footer>
+
+<script>
+const E=[
+["DOT Jordan","ICT Facilitator","05/2025 – Present","Za’atari Camp, Jordan","Digital skills training, and the Green Day initiative.",[["50+","digital skills courses coordinated"],["750+","young men and women benefiting"],["32+","students trained face to face"]],["Outreach and mobilization for digital courses","Technical and logistical support for smooth training delivery","Software troubleshooting and updates for computer devices","Attendance records, pre- and post-assessments","Launched Green Day on energy, solar power and efficiency, with basic electricity training for independent home maintenance"]],
+["Arak for Renewable Energy Technology","Solar Energy Engineer (Freelance)","11/2024 – 09/2025","Jordan","Photovoltaic system design, studies and client proposals.",[],["Designed PV systems with AutoCAD, SketchUp and PVSyst","Feasibility studies, performance ratio (PR) analysis and cost-benefit evaluations","Developed Single Line Diagrams (SLDs)","Prepared technical reports and proposals for clients"]],
+["Norwegian Refugee Council","Foreman","11/2024 – 12/2024","Za’atari Camp, Jordan","Led caravan maintenance with a safety-first team.",[["8","workers supervised"],["32","home maintenance workshops managed"]],["Supervised maintenance of caravans with skilled workers and helpers","Prepared daily reports and monitored operations","Enforced health and safety standards, including PPE"]],
+["World University Service of Canada","Refugee Guidance Counselor","10/2023 – 12/2025","Za’atari Camp, Jordan","Counseling on education and employment pathways to third countries.",[["50+","information sessions"],["1,000+","refugees reached"]],["Developed resources and presentations on complementary pathways","Counseling sessions on education and labor-linked immigration pathways"]],
+["Blumont","TIGER Coach","09/2023 – 03/2024","Za’atari Camp, Jordan","Math and STEM teaching for children aged 9 to 17.",[["100+","children taught mathematics"],["20","children in a STEM course"]],["Mobilized groups of children aged 9 to 17","Helped prepare training materials","Organized community events and initiatives with participants"]],
+["LENZ for Energy Consultancy","Operation Engineer","01/2023 – 08/2023","Jordan","Solar design, monitoring and after-sales maintenance.",[],["Designed solar systems with SketchUp, PVsyst and PVsol","Created SLDs in AutoCAD","Monitored, optimised and troubleshot solar systems","Routine after-sales maintenance for clients"]],
+["Mercy Corps","Youth Leader","02/2022 – 12/2022","Za’atari Camp, Jordan","Civic engagement training and youth-led initiatives.",[["90","children taught civic engagement"]],["Facilitated civic engagement sessions for young people","Assessed community needs","Planned initiatives with young people"]],
+["Delta Solar Company","Trainee Engineer","10/2021 – 01/2022","Jordan","First hands-on PV engineering experience.",[],["Site surveys and feasibility assessments","Technical documentation and reporting","Equipment testing and performance monitoring","Coordination with engineering and technical teams"]],
+["Blumont","Robotics Coach","10/2019 – 03/2021","Za’atari Camp, Jordan","Led robotics coaches and trained youth in person and online.",[["100+","youth trained"],["4th","place regionally, Ball Collector"]],["Supervised a team of robotics coaches, ensuring content quality and standard methods","Adapted curriculum to diverse learning environments","Won the Gracious Professionalism award nationally in FLL City Shaper"]],
+["International Association for Human Values","Yoga Trainer","07/2017 – 06/2018","Za’atari Camp, Jordan","Stress relief sessions for young people.",[["150","children trained"]],["Taught breathing techniques and yoga for stress and tension relief"]],
+["Syrian Youth Community","Volunteer","01/2015 – 06/2018","Za’atari Camp, Jordan","Community development and activities for kids.",[],["Assisted with community development programs and kids’ entertainment"]]];
+const C=[["RLRH Foundations: Refugee and Forced Migration Studies","Oxford University (RSC), 05/2026"],["Data Analysis Fundamentals","Udacity, 03/2026"],["Youth Programming and Essentials of M&E Principles","DOT Jordan, 03/2026"],["Project Management Foundations","LinkedIn Learning, 04/2025"],["Excel: Advanced Formulas and Functions","LinkedIn Learning, 01/2025"],["Energy Efficiency","German Energy Academy in Jordan, 12/2024"],["Career Development Program","AUF, 09/2024"],["Leadership, Advocacy and Public Speaking Training","COhere UNHCR, 08/2024"],["Designing the Metal Structure for PV Systems","Udemy, 11/2023"],["Solar PV System Design","Science Caravan Academy, 11/2023"],["Take the Lead","eCornell, 08/2023"],["Gaming Development and Virtual Reality","Al Hussein Technical University, 03/2022"],["Transformative Leadership, PSA and Facilitation Skills","Mercy Corps, 01/2022"]];
+const q=s=>document.querySelector(s),esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+q("#tl").innerHTML=E.map((e,i)=>`<li class="it"><div class="card"><button aria-expanded="false" aria-controls="m${i}"><span class="chev" aria-hidden="true">+</span><div class="when">${e[2]}</div><h3>${esc(e[1])}</h3><div class="org">${esc(e[0])}</div><div class="loc">${esc(e[3])}</div><p class="sum">${esc(e[4])}</p></button><div class="more" id="m${i}"><div><div class="in">${e[5].length?`<div class="mets">${e[5].map(m=>`<div class="met"><b>${m[0]}</b><span>${m[1]}</span></div>`).join("")}</div>`:""}<ul>${e[6].map(b=>`<li>${esc(b)}</li>`).join("")}</ul></div></div></div></div></li>`).join("");
+q("#certs").innerHTML=C.map(c=>`<li>${esc(c[0])}<small>${esc(c[1])}</small></li>`).join("");
+document.querySelectorAll(".card>button").forEach(b=>b.onclick=()=>{const o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",o);b.nextElementSibling.classList.toggle("open",o)});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll(".it").forEach(n=>io.observe(n));
+const m=q("#menu"),l=q("#nl");q("#links").remove();
+m.onclick=()=>{const o=l.classList.toggle("open");m.setAttribute("aria-expanded",o)};
+l.querySelectorAll("a").forEach(a=>a.onclick=()=>{l.classList.remove("open");m.setAttribute("aria-expanded",false)});
+</script>
+</body>
+</html>
